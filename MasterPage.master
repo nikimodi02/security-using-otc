@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/boostarp_secondary.css" />
+
+    <script>
+        function function_facebook() {
+            window.open("http://facebook.com");
+
+        }
+        function function_instagram() {
+            window.open("http://instagram.com");
+        }
+        function function_twitter() {
+            window.open("http://twitter.com");
+        }
+    </script>
+
+    <style>
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+        width: 70%;
+        margin: auto;
+      }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container container_head">
+            <img src="images/logo.png" class="img-thumbnail" alt="logo"/>
+            <span class="web_title">Republic School of Languages</span>
+            <div class="info">
+                <span class="glyphicon glyphicon-map-marker" style="color:black;"></span>
+                <span style="color:black;">Mumbai</span><br />
+                <span class="glyphicon glyphicon-phone" style="color:black;"></span>
+                <span style="color:black;">+91 9898555888</span><br />
+                <span class="glyphicon glyphicon-envelope" style="color:black;"></span>
+                <span style="color:black;">test@gmail.com</span><br />
+                <span>
+                    <asp:Image ID="ImageButton_facebook" runat="server" ImageUrl="~/images/facebook.png" Height="25px" Width="25px" OnClick="function_facebook()" />
+                    <asp:Image ID="ImageButton_instagram" runat="server" ImageUrl="~/images/instagram.png" Height="25px" Width="25px" OnClick="function_instagram()" />
+                    <asp:Image ID="ImageButton_twitter" runat="server" ImageUrl="~/images/twitter.png" Height="25px" Width="25px" OnClick="function_twitter()" />
+                </span>
+            </div>
+        </div>
+
+        <div class="container container_menu">
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li><a href="home.aspx">Home</a></li>
+                    <li class="dropdown"><a href="#">Academics</a>
+                        <div class="dropdown-content">
+                            <a href="#">Classroom Sessions</a>
+                            <a href="#">Home Tuitions</a>
+                            <a href="#">E-Learning</a>
+                            <a href="#">Crash Course / Traveller’s Guide</a>
+                            <a href="#">Practice / Quick Revision</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Languages</a></li>
+                    <li class="dropdown"><a href="#">Corporate Training</a>
+                        <div class="dropdown-content">
+                            <a href="#">Language Training</a>
+                            <a href="#">Translation & Interpretation</a>
+                            <a href="#">Dubbing & Subtitling</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Speech & Diction</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li> 
+                  </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+        <div class="container container_footer">
+            <div class="copyright">&copy; 2019 Republic School of Languages. All Rights Reserved</div>
+            <div class="footer_menu">
+                <a href="#"> Contact Us </a>
+                <a href="#"> Languages |</a>
+                <a href="#"> Academics |</a>
+                <a href="#"> Corporate |</a>
+                <a href="#"> Speech & Diction |</a>
+                <a href="#"> Gallery |</a>
+                <a href="#"> Home |</a>
+            </div>           
+        </div>
+    </form>
+</body>
+</html>

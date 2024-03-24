@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2769D9A8-7FB7-4CF2-A6E1-53CFB0A643F5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShoppingSite</RootNamespace>
+    <AssemblyName>ShoppingSite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Admin\css\bootstrap.css" />
+    <Content Include="Admin\css\bootstrap.min.css" />
+    <Content Include="Admin\css\Images\Sangmu_emblem.png" />
+    <Content Include="Admin\css\plugins\morris.css" />
+    <Content Include="Admin\css\sb-admin.css" />
+    <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\font-awesome-4.1.0\css\font-awesome.css" />
+    <Content Include="Admin\font-awesome-4.1.0\css\font-awesome.min.css" />
+    <Content Include="Admin\js\bootstrap.js" />
+    <Content Include="Admin\js\bootstrap.min.js" />
+    <Content Include="Admin\js\index.js" />
+    <Content Include="Admin\js\jquery.js" />
+    <Content Include="Admin\js\plugins\flot\excanvas.min.js" />
+    <Content Include="Admin\js\plugins\flot\flot-data.js" />
+    <Content Include="Admin\js\plugins\flot\jquery.flot.js" />
+    <Content Include="Admin\js\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="Admin\js\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="Admin\js\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="Admin\js\plugins\morris\morris-data.js" />
+    <Content Include="Admin\js\plugins\morris\morris.js" />
+    <Content Include="Admin\js\plugins\morris\morris.min.js" />
+    <Content Include="Admin\js\plugins\morris\raphael.min.js" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\Photo\4cbKRMKMi.png" />
+    <Content Include="Admin\Photo\bhootnath.jpg" />
+    <Content Include="Admin\Photo\Logo.png" />
+    <Content Include="Admin\Photo\original.png" />
+    <Content Include="Admin\Index.aspx" />
+    <Content Include="Admin\ManageProduct.aspx" />
+    <Content Include="Admin\AddProduct.aspx" />
+    <Content Include="Admin\Profile.aspx" />
+    <Content Include="Admin\ManageCustomer.aspx" />
+    <Content Include="Admin\AddCustomer.aspx" />
+    <Content Include="bin\ShoppingSite.dll" />
+    <Content Include="bin\ShoppingSite.pdb" />
+    <Content Include="css\easy-responsive-tabs.css" />
+    <Content Include="css\global.css" />
+    <Content Include="css\slider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\about_img.jpg" />
+    <Content Include="images\arrow-next.png" />
+    <Content Include="images\arrow-prev.png" />
+    <Content Include="images\arrow_up.png" />
+    <Content Include="images\compare.png" />
+    <Content Include="images\delivery-img1.jpg" />
+    <Content Include="images\delivery-img2.jpg" />
+    <Content Include="images\delivery-img3.jpg" />
+    <Content Include="images\dribbble.png" />
+    <Content Include="images\drop_arrow-hover.png" />
+    <Content Include="images\drop_arrow.png" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\feature-pic1.jpg" />
+    <Content Include="images\feature-pic2.jpg" />
+    <Content Include="images\feature-pic3.jpg" />
+    <Content Include="images\feature-pic4.jpg" />
+    <Content Include="images\linkedin.png" />
+    <Content Include="images\list-img.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\new-pic1.jpg" />
+    <Content Include="images\new-pic2.jpg" />
+    <Content Include="images\new-pic3.jpg" />
+    <Content Include="images\new-pic4.jpg" />
+    <Content Include="images\newsimg1.jpg" />
+    <Content Include="images\newsimg2.jpg" />
+    <Content Include="images\newsimg3.jpg" />
+    <Content Include="images\preview.jpg" />
+    <Content Include="images\price-rating.png" />
+    <Content Include="images\productslide-1.jpg" />
+    <Content Include="images\productslide-2.jpg" />
+    <Content Include="images\productslide-3.jpg" />
+    <Content Include="images\productslide-4.jpg" />
+    <Content Include="images\productslide-5.jpg" />
+    <Content Include="images\productslide-6.jpg" />
+    <Content Include="images\quality-rating.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\skype.png" />
+    <Content Include="images\slide-1-image.png" />
+    <Content Include="images\slide-2-image.jpg" />
+    <Content Include="images\slide-3-image.jpg" />
+    <Content Include="images\tag.png" />
+    <Content Include="images\thumbnailslide-1.jpg" />
+    <Content Include="images\thumbnailslide-2.jpg" />
+    <Content Include="images\thumbnailslide-3.jpg" />
+    <Content Include="images\thumbnailslide-4.jpg" />
+    <Content Include="images\thumbnailslide-5.jpg" />
+    <Content Include="images\thumbnailslide-6.jpg" />
+    <Content Include="images\twitter.png" />
+    <Content Include="images\value-rating.png" />
+    <Content Include="images\wishlist.png" />
+    <Content Include="js\easing.js" />
+    <Content Include="js\easyResponsiveTabs.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\jquery.accordion.js" />
+    <Content Include="js\jquery.easing.js" />
+    <Content Include="js\move-top.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\slides.min.jquery.js" />
+    <Content Include="js\startstop-slider.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="obj\Debug\ShoppingSite.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ShoppingSite.dll" />
+    <Content Include="obj\Debug\ShoppingSite.pdb" />
+    <Content Include="preview.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Mobile.aspx" />
+    <Content Include="Desktop.aspx" />
+    <Content Include="Laptop.aspx" />
+    <Content Include="Accessories.aspx" />
+    <Content Include="Camers.aspx" />
+    <Content Include="MP3Players.aspx" />
+    <Content Include="Cart.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageProduct.aspx.cs">
+      <DependentUpon>ManageProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageProduct.aspx.designer.cs">
+      <DependentUpon>ManageProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageCustomer.aspx.cs">
+      <DependentUpon>ManageCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageCustomer.aspx.designer.cs">
+      <DependentUpon>ManageCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddCustomer.aspx.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddCustomer.aspx.designer.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\DbConnection.cs" />
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="preview.aspx.cs">
+      <DependentUpon>preview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="preview.aspx.designer.cs">
+      <DependentUpon>preview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile.aspx.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mobile.aspx.designer.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop.aspx.cs">
+      <DependentUpon>Desktop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Desktop.aspx.designer.cs">
+      <DependentUpon>Desktop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Laptop.aspx.cs">
+      <DependentUpon>Laptop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laptop.aspx.designer.cs">
+      <DependentUpon>Laptop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accessories.aspx.cs">
+      <DependentUpon>Accessories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accessories.aspx.designer.cs">
+      <DependentUpon>Accessories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Camers.aspx.cs">
+      <DependentUpon>Camers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Camers.aspx.designer.cs">
+      <DependentUpon>Camers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MP3Players.aspx.cs">
+      <DependentUpon>MP3Players.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MP3Players.aspx.designer.cs">
+      <DependentUpon>MP3Players.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="ProductImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Admin\font-awesome-4.1.0\fonts\fontawesome-webfont.eot" />
+    <None Include="Admin\font-awesome-4.1.0\fonts\fontawesome-webfont.svg" />
+    <None Include="Admin\font-awesome-4.1.0\fonts\fontawesome-webfont.ttf" />
+    <None Include="Admin\font-awesome-4.1.0\fonts\fontawesome-webfont.woff" />
+    <None Include="Admin\font-awesome-4.1.0\fonts\FontAwesome.otf" />
+    <None Include="Admin\font-awesome-4.1.0\less\bordered-pulled.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\core.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\fixed-width.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\font-awesome.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\icons.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\larger.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\list.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\mixins.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\path.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\rotated-flipped.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\spinning.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\stacked.less" />
+    <None Include="Admin\font-awesome-4.1.0\less\variables.less" />
+    <None Include="Admin\font-awesome-4.1.0\scss\font-awesome.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_bordered-pulled.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_core.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_fixed-width.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_icons.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_larger.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_list.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_mixins.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_path.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_rotated-flipped.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_spinning.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_stacked.scss" />
+    <None Include="Admin\font-awesome-4.1.0\scss\_variables.scss" />
+    <None Include="Admin\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Admin\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="Admin\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Admin\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin\Site1.Master" />
+    <None Include="font\Amble-Regular-webfont.ttf" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1289</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1289/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
